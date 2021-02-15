@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+	name = David Guardia
+	email = 1012547+dguardia@users.noreply.github.com
+# Please adapt and uncomment the following lines:
+#	name = DAVID GUARDIA
+#	email = dguardia@focusvision.com
+[core]
+	autocrlf = input
