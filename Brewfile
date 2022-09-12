@@ -46,7 +46,7 @@ brew "php@7.3", restart_service: true
 # Software environment for statistical computing
 brew "r"
 # File system client based on SSH File Transfer Protocol
-brew "sshfs"
+# brew "sshfs"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
 # Display directories as trees (with optional color/HTML output)
@@ -72,7 +72,7 @@ cask "brave-browser"
 # Server and cloud storage browser
 cask "cyberduck"
 # App to build and share containerized applications and microservices
-cask "docker"
+# cask "docker"
 cask "figma"
 # Web browser
 cask "firefox"
@@ -84,7 +84,7 @@ cask "google-chrome"
 cask "google-chrome-canary"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
-cask "lando"
+# cask "lando"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Multi-platform web browser
@@ -93,14 +93,12 @@ cask "microsoft-teams"
 # Web browser
 cask "opera"
 # File system integration
-cask "osxfuse"
+# cask "osxfuse"
 cask "phpstorm"
 # Collaboration platform for API development
 cask "postman"
 # Environment for statistical computing and graphics
 cask "r"
-# Password manager and form filler application
-cask "roboform"
 # Data science software focusing on R and Python
 cask "rstudio"
 # MySQL/MariaDB database management platform
@@ -117,5 +115,3 @@ cask "visual-studio-code"
 cask "vlc"
 # Desktop client for WhatsApp
 cask "whatsapp"
-# Open-source version of the X.Org X Window System
-cask "xquartz"
