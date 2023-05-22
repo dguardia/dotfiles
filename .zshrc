@@ -126,3 +126,4 @@ if type brew &>/dev/null; then
   compinit
 fi
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
