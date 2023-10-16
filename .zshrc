@@ -70,9 +70,10 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  colored-man-pages
+  colorize pip python brew osx
   bundler
   dotenv
-  osx
   rake
   rbenv
   ruby
