@@ -41,8 +41,6 @@ brew "jq"
 brew "libzip"
 # General-purpose scripting language
 brew "php", restart_service: true
-# General-purpose scripting language
-brew "php@7.3", restart_service: true
 # Software environment for statistical computing
 brew "r"
 # File system client based on SSH File Transfer Protocol
