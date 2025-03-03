@@ -79,7 +79,7 @@ cask "flutter"
 # Web browser
 cask "google-chrome"
 # Web browser
-cask "google-chrome-canary"
+cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
 # cask "lando"
