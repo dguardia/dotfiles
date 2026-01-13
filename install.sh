@@ -52,3 +52,9 @@ echo "Applying macOS defaults..."
 ~/.dotfiles/scripts/macos-defaults.sh
 
 echo "✅ Setup complete! Please restart your terminal."
+
+# Setup Claude configs if available
+if [ -f ~/.dotfiles/scripts/setup-claude.sh ]; then
+    echo "Setting up Claude..."
+    ~/.dotfiles/scripts/setup-claude.sh
+fi
