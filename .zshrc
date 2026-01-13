@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-# export ZSH="/Users/dguardia/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   colored-man-pages
-  colorize pip python brew osx
+  colorize pip python brew macos
   bundler
   dotenv
   rake
@@ -114,8 +114,9 @@ export PATH="$HOME/.terminus/vendor/bin:$PATH"
 export PATH="$HOME/usr/local/bin/composer:$PATH"
 
 
-export GITHUB_TOKEN="2c57740f1aebfc6b6d67b5aaa39ac32e3323aef6"
-export CIRCLE_TOKEN="4b93f3d9c70d830bdfae53313a9e911450ed7cae"
+# Load secrets from local file (not tracked in git)
+[[ -f ~/.secrets ]] && source ~/.secrets
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 

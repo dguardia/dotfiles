@@ -1,0 +1,11 @@
+# Secrets - never commit
+.secrets
+*.secrets
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Local overrides
+*.local
