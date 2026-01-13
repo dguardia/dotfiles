@@ -1,0 +1,21 @@
+# SSH Config Template for David Guardia
+# Copy to ~/.ssh/config and customize
+
+# Default settings for all hosts
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_ed25519
+
+# GitHub
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519
+
+# Example: Custom server
+# Host myserver
+#     HostName server.example.com
+#     User dguardia
+#     Port 22
+#     IdentityFile ~/.ssh/id_ed25519
