@@ -1,0 +1,53 @@
+# Brewfile.mini — LEAN profile (Crabby Guard host Macs: 🦀 Crabby, 🦞 Lobsty)
+# Updated 2026-05-29.
+#
+# Headless agent host. Strictly the dev essentials David also wants present
+# when he remotes in to co-work. NOT here (Crabby Guard's bootstrap installs them):
+#   bitwarden-cli, go, rust, miniconda, uv, postgresql@16, mysql, sqlite, redis,
+#   docker isn't here either — opt to keep this profile minimal. Add via bootstrap.
+#   raspberry-pi-imager, obsidian, opencode, openclaw, tailscale.
+#
+# Picked by install.sh when:  bash install.sh mini   OR  hostname matches crabby*/lobsty*/*-mini*
+
+# ── Taps ────────────────────────────────────────────────────────────────────
+tap "homebrew-ffmpeg/ffmpeg"
+tap "pantheon-systems/external"
+
+# ── CLI essentials ─────────────────────────────────────────────────────────
+brew "ack"
+brew "gh"                      # Crabby uses gh heavily (cloning, PRs)
+brew "jq"                      # used by lib.sh helpers in crabby-guard
+brew "openssh"
+brew "pandoc"
+brew "pipx"
+brew "tree"
+brew "wget"
+
+# ── Languages & build ───────────────────────────────────────────────────────
+brew "fnm"                     # Node manager — Crabby needs >=22.19 for OpenClaw
+brew "node"
+brew "php"                     # for WP review job
+brew "composer"
+
+# ── DevOps ──────────────────────────────────────────────────────────────────
+brew "pantheon-systems/external/terminus"   # if reviewing Pantheon-hosted repos
+
+# ── Media ───────────────────────────────────────────────────────────────────
+brew "homebrew-ffmpeg/ffmpeg/ffmpeg"        # voice / media processing
+
+# ── Local LLM (Crabby's free tier) ──────────────────────────────────────────
+brew "ollama"
+
+# ── Casks: one browser for testing ─────────────────────────────────────────
+cask "google-chrome"
+
+# ── Casks: the things David uses when remoting in ──────────────────────────
+cask "visual-studio-code"                   # the VS Code Remote target
+
+# ── VS Code extensions (slim) ──────────────────────────────────────────────
+vscode "anthropic.claude-code"
+vscode "github.copilot"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-python.python"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
