@@ -106,6 +106,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# --- Personal aliases ---
+# Launch a Claude Code session wired to the Telegram channel, then DM @dg_mbpblack_bot
+# from your phone to reach it. (Session-bound: only listens while this is running.)
+alias claude-tg='claude --channels plugin:telegram@claude-plugins-official'
+
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
